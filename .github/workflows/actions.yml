@@ -26,7 +26,7 @@ jobs:
           git config --global user.email "gowthamr56@users.noreply.github.com"
           git config --global user.name "gowthamr56"
           git remote set-url origin "https://github.com/gowthamr56/laughing-giggle.git"
-          git add log.txt
+          git add -A
           git commit -m "updated log file"
 
 
