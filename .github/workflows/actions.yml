@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: "checking out repository"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
 
       - name: "setting up python"
         uses: actions/setup-python@v4
@@ -28,11 +28,4 @@ jobs:
           git remote set-url origin "https://github.com/gowthamr56/laughing-giggle.git"
           git add -A
           git commit -m "updated log file"
-
-
-      - name: "push changes"
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{secrets.PAT}}
-          branch: master
-
+          git push 
