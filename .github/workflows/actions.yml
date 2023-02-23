@@ -28,4 +28,4 @@ jobs:
           git remote set-url origin "https://github.com/gowthamr56/laughing-giggle.git"
           git add -A
           git commit -m "updated log file"
-          git push 
+          git push origin master
