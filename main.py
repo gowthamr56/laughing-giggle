@@ -1,6 +1,10 @@
 import os
+import datetime
 
-print(os.curdir)
-print(os.listdir())
+today = str(datetime.datetime.today()) + "\n"
+print(today)
 
-os.system("git status")
+with open("log.txt", "a") as file:
+    file.write(today)
+
+print("log file updated")
