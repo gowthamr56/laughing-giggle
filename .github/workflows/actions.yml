@@ -1,0 +1,22 @@
+name: "testing"
+
+on:
+  push: 
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "checking out repository"
+        uses: actions/checkout@v3
+
+      - name: "setting up python"
+        uses: actions/setup-python@v4
+        with: 
+        python-version: "3.x"
+
+      - name: "run python file"
+        run: |
+          python main.py
