@@ -23,7 +23,7 @@ jobs:
 
       - name: "commiting changes"
         run: |
-          git log --oneline
+          git branch
           echo "************************"
           git config --global user.email "gowthamr56@users.noreply.github.com"
           git config --global user.name "gowthamr56"
